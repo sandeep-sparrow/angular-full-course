@@ -1,0 +1,5 @@
+<!-- Data Binding - String interpolation -->
+<p [ngStyle]="{backgroundColor: getColor()}"
+   [ngClass]="{online: serverStatus === 'online'}">
+  {{'server'}} Id is {{serverId}} and server status is {{getServerStatus()}}
+</p>
