@@ -24,6 +24,10 @@ import { EvenComponent } from './even/even.component';
     FormsModule,
   ],
   providers: [],
+  exports: [
+    CockpitComponent,
+    ServerElementComponent
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
