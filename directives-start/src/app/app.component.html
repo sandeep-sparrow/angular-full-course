@@ -17,12 +17,13 @@
         <div *ngIf="!onlyOdd">
           <li
             class="list-group-item"
-            [ningngClass]="{even: even % 2 == 0}"
+            [ngClass]="{even: even % 2 == 0}"
             *ngFor="let even of numbers">
             {{even}}
           </li>
         </div>
       </ul>
+      <p basicHighLightDirective>Style this paragraph with basic highlight directive</p>
     </div>
   </div>
 </div>
