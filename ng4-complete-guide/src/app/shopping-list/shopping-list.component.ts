@@ -24,8 +24,8 @@ export class ShoppingListComponent implements OnInit{
     this.shoppingListService.ingredientAdded
         .subscribe((ingredient: Ingredient) => {
               this.ingredients.push(ingredient);
-            }
-        );
+        }
+    );
   }
 
 }
