@@ -11,7 +11,6 @@ export class ShoppingEditComponent {
 
   @ViewChild('nameInput', {static: false}) nameInputRef: ElementRef;
   @ViewChild('amountInput', {static: false}) amountInputRef: ElementRef;
-
   constructor(private shoppingListService: ShoppingListService) {
   }
 
@@ -19,7 +18,7 @@ export class ShoppingEditComponent {
     const ingName = this.nameInputRef.nativeElement.value;
     const ingAmount = this.amountInputRef.nativeElement.value;
     const newIngredient = new Ingredient(ingName, ingAmount);
-    this.shoppingListService.ingredientAdded.emit(newIngredient);
+    this.shoppingListService.addIngredient(newIngredient);
   }
 
   onDeleteItem() {
