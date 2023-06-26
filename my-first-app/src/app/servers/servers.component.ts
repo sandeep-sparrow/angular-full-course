@@ -39,6 +39,7 @@ export class ServersComponent {
 
   onResetUserName(){
     this.userName = "";
+    this.allowUserNameReset = false;
   }
 
   enableResetUserName(){
