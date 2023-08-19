@@ -17,17 +17,19 @@
       </button>
       <ul class="dropdown-menu">
         <li><a (click)="onAddToShoppingList()" style="cursor: pointer">Add Ingredients to shopping list</a></li>
-        <li><a href="#">Edit Recipe</a></li>
-        <li><a href="#">Delete Recipe</a></li>
+        <li><a style="cursor: pointer" routerLink="edit">Edit Recipe</a></li>
+        <li><a style="cursor: pointer">Delete Recipe</a></li>
       </ul>
     </div>
   </div>
 </div>
+<br>
 <div class="row">
   <div class="col-xs-12">
     {{recipe.description}}
   </div>
 </div>
+<br>
 <div class="row">
   <div class="col-xs-12">
     <ul class="list-group">
